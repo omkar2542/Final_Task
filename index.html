@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee_Portal
+    </title>
+    <link rel="stylesheet" href="style1.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="container1">
+            <div class="mainLine">
+                <label class="headLine">Employee Portal</label>
+            </div>
+                <form  class="formdetails" id="emp_data" >
+                    
+                    <div class="employee_id">
+                        <div class="lebels">
+                        <label for="">Employee Id:</label>
+                        <span id="eror"></span>
+                        </div>
+                        <div class="textfields" >
+                        <input type="number" id="id" name="id" placeholder="Id" required min="1" >
+                        </div>
+                    </div>
+                    <div class="employee_name">
+                        <div class="lebels">
+                        <label for="">Employee Name:</label>
+                        </div>
+                        <div class="textfields">
+                        <input type="text" id="name" name="name" pattern="^[A-Za-z]+$" placeholder="Name of Employee" required>
+                        </div>
+                    </div>
+
+                    <div class="employee_age">
+                        <div class="lebels">
+                        <label for="">Employee Age:</label>
+                        </div>
+                        <div class="textfields">
+                        <input type="number" id="age" name="age" placeholder="Employee Age" required min="18" max="60">
+                        </div>
+                    </div>
+
+                    <div class="employee_gender">
+                        <div class="lebels">
+                        <label for="gender">Employee Gender:</label>
+                        </div>
+                        <div class="textfields">
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                        </div>
+                    </div>
+
+                    <div class="submit_button" id="submit">
+                        <button type="submit">Add Records</button>
+                    </div>
+                </form>
+
+           <div class="update" id="upper" style="display: none;">
+            <div class="mainLine1">
+                <label class="headLine">Update Employee Data</label>
+            </div>
+            <form id="submit2form">
+                   
+                <div class="employee_id">
+                    <div class="lebels">
+                    <label for="">Employee Id:</label>
+                    <span id="te"></span>
+                    </div>
+                    <div class="textfields" >
+                    <input type="number" id="upid" name="id" placeholder="Id" required min="1" >
+                    </div>
+                </div>
+                <span id="te"></span>
+                <div class="employee_name">
+                    <div class="lebels">
+                    <label for="">Employee Name:</label>
+                    </div>
+                    <div class="textfields">
+                    <input type="text" id="upname" name="name" placeholder="Name of Employee" required>
+                    </div>
+                </div>
+
+                <div class="employee_age">
+                    <div class="lebels">
+                    <label for="">Employee Age:</label>
+                    </div>
+                    <div class="textfields">
+                    <input type="number" id="upage" name="age" placeholder="Employee Age" required min="18" max="60">
+                    </div>
+                </div>
+
+                <div class="employee_gender">
+                    <div class="lebels">
+                    <label for="gender">Employee Gender:</label>
+                    </div>
+                    <div class="textfields">
+                    <select name="gender" id="upgender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    </div>
+                </div>
+
+                <div class="submit_button1">
+                    <button type="submit" id="submit2">Update</button>
+                </div>
+                <div class="submit_button2">
+                    <button type="button" id="submit3">Cancel</button>
+                </div>
+
+            </form>
+           </div>
+        </div>
+        <div class="container2">
+            <table id="table1" class="table1">
+                <thead>
+                <tr class="thead">
+                  <th>Employee Id</th>
+                  <th>Employee Name</th>
+                  <th>Employee Age</th>
+                  <th>Employee Gender</th>
+                  <th>Action</th>
+                </tr>
+                </thead>
+                <tbody name="tbody">
+                </tbody>
+              </table>
+              <script src="logic2.js"></script>
+              
+        </div>
+    </div>
+    
+
+</body>
+</html>

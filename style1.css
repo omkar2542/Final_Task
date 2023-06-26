@@ -1,0 +1,119 @@
+
+.container{
+width: 100%;
+height: 100%;
+display: flex;
+flex-wrap: wrap;
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(5, 5, 5);
+
+}
+
+.container1{
+    justify-items: center;
+    width: 50%;
+    height: 100%;
+   
+}
+
+.container1 .mainLine{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px ;
+    margin-left: 50px;
+
+}
+
+
+.mainLine1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px ;
+
+}
+
+
+form .employee_id{
+    padding: 5px ;
+    font-size: 15px;
+    line-height: 20px;
+}
+.textfields > input{
+ 
+    width: 60%;
+    height: 30px;
+    top:30px;
+    padding:5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #050505;
+}
+
+form .employee_name{
+    padding: 5px ;
+}
+form .employee_age{
+    padding: 5px ;
+}
+select{
+    margin-bottom: 5px;
+    width: 60%;
+    height: 30px;
+    border: 1px solid #050505;
+    border-radius: 5px;
+}
+ .submit_button > button{
+    width: 60%;
+    height: 35px;
+    background-color: #8842d8;
+    color: white; 
+    border: 1px solid #050505;
+    border-radius: 5px;
+}
+
+.submit_button1 > button{
+    width: 60%;
+    height: 35px;
+    margin-top: 5px;
+    background-color: rgb(231, 247, 9);
+    color: rgb(14, 9, 9); 
+    border: 1px solid #050505;
+    border-radius: 5px;
+}
+
+.submit_button2 > button{
+    width: 60%;
+    height: 35px;
+    margin-top: 5px;
+    background-color: rgb(238, 238, 238);
+    color: rgb(19, 12, 12); 
+    border: 1px solid #050505;
+    border-radius: 5px;
+}
+
+.update{
+    padding-top: 20px;
+}
+
+.container2{
+    position: relative;
+    width: 50%;
+    height: 100%;   
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+}
+ .table1{
+    border: 1px solid;
+ }
+ .thead th
+{
+    border: 1px solid;
+}
+.tbody{
+    border: 1px solid;
+}
+ #eror{
+    color: red;
+ }
+ #te{
+    color: red;
+ }
+
